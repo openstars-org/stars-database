@@ -45,7 +45,9 @@ data_sorted['con_text'] =  np.where(data_sorted['con'].isnull(), data_sorted['na
 data_sorted['description'] =  data_sorted['con_text'] + " For more information, visit https://explorer.openstars.org/#view/hip-" + data_sorted['hip']
 data_sorted['image'] =  "https://raw.githubusercontent.com/openstars-org/stars-database/main/images/hip" + data_sorted['hip'] + ".png"
 data_sorted['external_url'] = "https://explorer.openstars.org/#view/hip-" + data_sorted['hip']
+data_sorted['animation_url'] = "https://explorer.openstars.org/#/preview/hip-" + data_sorted['hip']
 
+70890
 data_sorted = data_sorted.drop('con_text', 1)
 
 def round_to(n, precision):
