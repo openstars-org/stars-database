@@ -65,7 +65,7 @@ max_dist = 100
 absmag_multiplier = 10
 dist_multiplier = 2
 data_sorted['price'] = ( absmag_multiplier * (max_absmag - data_sorted['absmag']) + dist_multiplier * (max_dist - data_sorted['dist']))
-data_sorted['price']= data_sorted['price']/3000 + 0.015
+data_sorted['price']= data_sorted['price']/3000 + 0.02
 data_sorted['price']= data_sorted['price'] + data_sorted['premium']
 data_sorted['price'] = data_sorted['price'].apply(round_to_05)
 
